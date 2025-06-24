@@ -5,7 +5,8 @@ import Particle from '../Particle';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-const pdf = process.env.PUBLIC_URL + './Soumyajit_Behera-BIT_MESRA.pdf';
+const pdfen = process.env.PUBLIC_URL + './Pham-Huy-Dang-FullStack.pdf';
+const pdfvn = process.env.PUBLIC_URL + './Pham-Huy-Dang-FullStack-vn.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -37,15 +38,30 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: 'center', position: 'relative' }}>
+        <Row
+          style={{
+            justifyContent: 'center',
+            position: 'relative',
+            gap: '10px',
+          }}
+        >
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfvn}
             target="_blank"
             style={{ maxWidth: '250px' }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download CV (Tiếng Việt)
+          </Button>
+          <Button
+            variant="primary"
+            href={pdfen}
+            target="_blank"
+            style={{ maxWidth: '250px' }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV (English)
           </Button>
         </Row>
 
@@ -55,7 +71,7 @@ function ResumeNew() {
         >
           <div style={{ textAlign: 'center' }}>
             <Document
-              file={pdf}
+              file={pdfen}
               onLoadSuccess={onDocumentLoadSuccess}
               className="d-flex justify-content-center"
             >
@@ -105,16 +121,26 @@ function ResumeNew() {
             justifyContent: 'center',
             position: 'relative',
             marginTop: '20px',
+            gap: '10px',
           }}
         >
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfvn}
             target="_blank"
             style={{ maxWidth: '250px' }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download CV (Tiếng Việt)
+          </Button>
+          <Button
+            variant="primary"
+            href={pdfen}
+            target="_blank"
+            style={{ maxWidth: '250px' }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV (English)
           </Button>
         </Row>
       </Container>
