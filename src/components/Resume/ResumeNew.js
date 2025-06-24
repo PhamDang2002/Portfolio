@@ -5,8 +5,8 @@ import Particle from '../Particle';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-const pdfen = process.env.PUBLIC_URL + './Pham-Huy-Dang-FullStack.pdf';
-const pdfvn = process.env.PUBLIC_URL + './Pham-Huy-Dang-FullStack-vn.pdf';
+const pdfen = process.env.PUBLIC_URL + './PhamHuyDang_EN.pdf';
+const pdfvn = process.env.PUBLIC_URL + './PhamHuyDang_VN.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
