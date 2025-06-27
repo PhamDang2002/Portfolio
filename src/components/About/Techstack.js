@@ -8,7 +8,12 @@ import {
   DiMongodb,
   DiGit,
 } from 'react-icons/di';
-import { SiTailwindcss, SiRedux, SiReduxsaga } from 'react-icons/si';
+import {
+  SiTailwindcss,
+  SiRedux,
+  SiReduxsaga,
+  SiNextdoor,
+} from 'react-icons/si';
 
 function Techstack() {
   return (
@@ -32,14 +37,19 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
+
       <Col xs={4} md={2} className="tech-icons">
         <SiReduxsaga />
       </Col>
+
       <Col xs={4} md={2} className="tech-icons">
         <img src="/materialUI.svg" alt="Material UI" className="ortherimage" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src="/nextjs.svg" alt="Material UI" className="ortherimage" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src="/typescript.svg" alt="Material UI" className="ortherimage" />
       </Col>
     </Row>
   );

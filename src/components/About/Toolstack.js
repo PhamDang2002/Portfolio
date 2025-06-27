@@ -5,6 +5,7 @@ import {
   SiPostman,
   SiVercel,
   SiWindows,
+  SiGit,
 } from 'react-icons/si';
 
 function Toolstack() {
@@ -24,6 +25,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src="/chatgpt.svg" alt="ChatGPT" className="ortherimage" />
